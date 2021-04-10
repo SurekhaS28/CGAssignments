@@ -12,18 +12,18 @@ public class Ex2 {
         System.out.println(Arrays.toString(arr));
 		int len=0;
 		String[]arr1=new String[arr.length];
+		String str="";
+		String str1="";
 		for(int i=0;i<arr.length;i++)
 		{
 			len=arr[i].length();
 			if(len%2==0)
 			{
-				arr1[i]+=arr[i].substring(0,len/2).toUpperCase();
-				arr1[i]+=arr[i].substring(len/2).toLowerCase();
+				arr1[i]=str+arr[i].substring(0,len/2).toUpperCase()+arr[i].substring(len/2).toLowerCase();
 			}
 			else
 			{
-				arr1[i]+=arr[i].substring(0,(len/2)+1).toUpperCase();
-				arr1[i]+=arr[i].substring((len/2)+1).toLowerCase();
+				arr1[i]=str1+arr[i].substring(0,(len/2)+1).toUpperCase()+arr[i].substring((len/2)+1).toLowerCase();
 			}
 			
 		}
